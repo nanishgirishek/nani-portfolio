@@ -23,14 +23,14 @@ body {
 .social-icons a:hover {
     color: #007bff;
 }
-.container{
-    text-shadow:0 0 50px #007bff 50px;
+.container1{
+    text-shadow: 5000px  navy;
 
 }
 .img{
     .img-shadow {
-        box-shadow: 10px 10px 20px rgba(0, 162, 255, 0.5); /* Light blue shadow */
-        border-radius: 10px; /* Optional: Adds smooth corners */
+        box-shadow: 10px 10px 20px rgba(0, 162, 255, 0.5); 
+        border-radius: 10px; 
     }
     
     flex-wrap: wrap;
