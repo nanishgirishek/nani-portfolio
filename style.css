@@ -21,29 +21,130 @@ body {
 }
 
 .social-icons a:hover {
+  
     color: #007bff;
 }
-.container1{
-    text-shadow: 5000px  navy;
-
+.container1 {
+    text-shadow: 2px 2px 10px navy;
 }
-.img{
-    .img-shadow {
-        box-shadow: 10px 10px 20px rgba(0, 162, 255, 0.5); 
-        border-radius: 10px; 
-    }
-    
+
+.img {
     flex-wrap: wrap;
     margin: 3%;
-    padding: ;
-
+    padding: 10px;
     border-radius: 50%;
-    text-shadow:0 0 50px #007bff 50px;
+    text-shadow: 0 0 50px #007bff;
     width: 350px;
     height: 450px;
     text-align: start;
     overflow: hidden;
 }
-.navbar{
+
+.img-shadow {
+    box-shadow: 0 0 20px 5px rgba(0, 162, 255, 0.8);
+    border-radius: 10px;
+}
+
+.navbar {
     position: sticky;
+    top: 0;
+}
+
+.about {
+    text-align: left;
+    margin-left: 200px;
+}
+
+.container2 {
+    text-align: center;
+}
+
+.h11 {
+    text-align: center;
+    color: #0ef;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myskills {
+    width: 600px;
+    height: 500px;
+    padding:;
+    margin-left: 80px;f
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.technicol-bar .bar {
+    margin: 5px 0;
+}
+
+.technicol-bar .bar:first-child {
+    margin-top: 0;
+}
+
+.technicol-bar .bar:last-child {
+    margin-bottom: 0;
+}
+
+.technicol-bar .bar .info {
+    margin-top: 5px;
+}
+
+.technicol-bar .bar .info span {
+    font-size: 10px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technicol-bar .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technicol-bar .bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+.progress-line.css span {
+    width: 75%;
+}
+.progress-line.javascript span {
+    width: 70%;
+}
+.progress-line.python span {
+    width: 90%;
+}
+.progress-line.react span {
+    width: 50%;
+}
+footer{
+    text-align: center;
 }
